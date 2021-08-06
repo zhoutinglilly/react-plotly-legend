@@ -1,0 +1,1 @@
+export const DEFAULT_SIDE_NUMBER_MAX = 15

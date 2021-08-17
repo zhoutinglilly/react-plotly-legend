@@ -1,0 +1,13 @@
+.DS_Store
+# node_modules/ is ignored
+node_modules
+# testing cypress
+cypress
+# others
+dist
+build
+public
+# .eslintrc.js
+
+# css
+*.css

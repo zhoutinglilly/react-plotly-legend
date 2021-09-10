@@ -31,7 +31,7 @@ module.exports = merge(common, {
             root: 'Plot',
         },
     },
-    optimization: {
-        splitChunks: { chunks: 'all' },
-    },
+    // optimization: {
+    //     splitChunks: { chunks: 'all' },
+    // },
 })

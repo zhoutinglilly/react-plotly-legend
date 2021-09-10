@@ -1,8 +1,8 @@
 {
   "name": "react-plotly-legend",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A customized legend component for react-plot",
-  "main": "src/index.js",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/zhoutinglilly/react-plotly-legend"

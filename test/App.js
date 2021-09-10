@@ -1,5 +1,6 @@
 import React from 'react'
 import PlotlyLegend from 'src'
+import { scatterData } from 'src/mock'
 
 const getSymbol = (index) => {
     if (index >= 14 && index <= 16) {
@@ -21,28 +22,41 @@ const getSymbol = (index) => {
 }
 
 export default () => {
-    const legends = Array.from(new Array(8), (_, index) => {
-        return {
-            id: index,
-            name: `item_${index}`,
-            mode: 'lines+markers',
-            type: 'scatter',
-            marker: {
-                color: 'gray',
-                symbol: getSymbol(index),
-                size: 6,
-            },
-        }
-    })
+    // const legends = Array.from(new Array(8), (_, index) => {
+    //     return {
+    //         id: index,
+    //         name: `item_${index}`,
+    //         mode: 'lines+markers',
+    //         type: 'scatter',
+    //         marker: {
+    //             color: 'gray',
+    //             symbol: getSymbol(index),
+    //             size: 6,
+    //         },
+    //     }
+    // })
+
+    const layout = {
+        autosize: true,
+        hovermode: 'closest',
+        // showlegend: true,
+        margin: {
+            l: 40,
+            r: 260,
+            b: 80,
+            t: 80,
+        },
+    }
     return (
         <div>
             <h3>plotly-legend-react</h3>
             <PlotlyLegend
-                data={legends}
+                data={scatterData}
+                layout={layout}
                 // onChange={(e) => setSelectedLegends(e)}
                 // initialHeight={(e) => setLegendHeight(e)}
                 // groups={groups}
-                style={{ width: '240px' }}
+                style={{ width: '800px' }}
             />
         </div>
     )

@@ -1,0 +1,41 @@
+.react-plot-legend-container {
+    position: absolute;
+    top: 55px;
+    right: 0;
+    .react-plot-legend-list {
+        display: flex;
+        .react-plot-legend-list-item {
+            padding-right: 10px;
+        }
+        .react-plot-legend-item{
+            margin-right: 15px;
+            margin-bottom: 4px;
+            width: 100%;
+            .legend-content {
+                cursor: pointer;
+                font-size: 13px;
+                color: #000;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                // width: 76%;
+                .legend-text {
+                    display: inline-block;
+                    // width: 30px;
+                    flex: 1;
+                    line-height: 20px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    user-select: none;
+                }
+            }
+            .legend-extra-description {
+                cursor: pointer;
+                word-break: break-all;
+                line-height: 1;
+                user-select: none;
+                // padding-left: 15px;
+            }
+        }
+    }
+}

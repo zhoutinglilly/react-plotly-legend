@@ -6,19 +6,19 @@ module.exports = {
         [
             'import',
             {
-                'libraryName': 'antd',
-                'libraryDirectory': 'es',
-                'style': 'css'
-            }
+                libraryName: 'antd',
+                libraryDirectory: 'es',
+                style: true,
+            },
         ],
         [
             'import',
             {
-                'libraryName': '@ant-design/icons',
-                'libraryDirectory': 'lib/icons',
-                'camel2DashComponentName': false,
+                libraryName: '@ant-design/icons',
+                libraryDirectory: 'lib/icons',
+                camel2DashComponentName: false,
             },
             '@ant-design/icons',
         ],
-    ]
+    ],
 }
